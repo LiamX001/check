@@ -1,0 +1,79 @@
+.box {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #D02752;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font {
+    position: relative;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 900;
+    font-family:  'Be Vietnam Pro', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #FCF5EE;
+    text-shadow: 
+        4px 4px 0 #000,
+        8px 8px 0 rgba(0,0,0,0.3);
+    z-index: 2;
+}
+.layer-lanterns {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 100%;
+    pointer-events: none;
+}
+.lantern {
+    position: absolute;
+    top: 10px;
+    width: 18px;
+    height: 26px;
+    background: radial-gradient(circle at 30% 30%, #ffd36a, var(--gold));
+    border-radius: 6px 6px 10px 10px;
+    box-shadow: 0 0 12px rgba(244,196,48,.8);
+    animation: float 6s ease-in-out infinite;
+}
+.lantern::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 8px;
+    background: #ffd36a;
+}
+@keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+.l1 { left: 10%; top: 30px; }
+.l2 { left: 25%; top: 40px; }
+.l3 { left: 35%; top: 50px; }
+.l4 { left: 45%; top: 60px; }
+.l5 { left: 55%; top: 70px; }
+.l6 { left: 65%; top: 80px; }
+.l7 { left: 75%; top: 90px; }
+.l8 { left: 85%; top: 100px; }
+.l9 { left: 98%; top: 110x; }
+
+.l1 { animation-delay: 0s; }
+.l2 { animation-delay: 1s; }
+.l3 { animation-delay: 2s; }
+.l4 { animation-delay: .5s; }
+.l5 { animation-delay: .5s; }
+.l6 { animation-delay: .5s; }
+.l7 { animation-delay: .5s; }
+.l8 { animation-delay: .5s; }
+.l9 { animation-delay: .5s; }
+:root {
+  --gold: #f4c430;
+}
+
+
