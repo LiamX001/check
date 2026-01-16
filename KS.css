@@ -37,7 +37,7 @@
     background: radial-gradient(circle at 30% 30%, #ffd36a, var(--gold));
     border-radius: 6px 6px 10px 10px;
     box-shadow: 0 0 12px rgba(244,196,48,.8);
-    animation: float 6s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
 }
 .lantern::after {
     content: "";
@@ -189,5 +189,6 @@
     top: 20%;
     left: 0;
 }
+
 
 
